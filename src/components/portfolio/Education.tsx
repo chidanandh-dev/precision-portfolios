@@ -1,55 +1,134 @@
-import { GraduationCap, Award } from "lucide-react";
+import { GraduationCap, Award, Calendar, Landmark, CheckCircle } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
 const education = [
-  { degree: "Master of Arts in Economics", school: "Calicut University, India", year: "2022", note: "Advanced economic theory, quantitative analysis, public finance." },
-  { degree: "Bachelor of Arts in Economics", school: "Calicut University, India", year: "2020", note: "Microeconomics, macroeconomics, statistical methods." },
-  { degree: "Diploma in Indian & Foreign Accounting", school: "G-Tec, India", year: "2023", note: "Tally, QuickBooks, Sage 50, Zoho Books, GST and financial reporting." },
+  { 
+    degree: "Master of Arts in Economics", 
+    school: "Calicut University, India", 
+    year: "2022", 
+    note: "Specialized in advanced econometrics, public finance, monetary policy, and statistical data analysis." 
+  },
+  { 
+    degree: "Bachelor of Arts in Economics", 
+    school: "Calicut University, India", 
+    year: "2020", 
+    note: "Focused on micro/macroeconomic models, business math, and regional economic development statistics." 
+  },
+  { 
+    degree: "Diploma in Indian & Foreign Accounting", 
+    school: "G-Tec Education, India", 
+    year: "2023", 
+    note: "Professional training in Tally Prime, QuickBooks, Sage 50, Zoho Books, GST compliance, and Indian tax ledgers." 
+  },
 ];
 
-const certs = [
-  "Accounting Software Training — Tally Prime, QuickBooks, Sage 50",
-  "MS Office Suite Proficiency — Excel, Word, PowerPoint, Outlook",
-  "Cloud-Based Accounting Tools & ERP Systems",
-  "Administrative Workflow & Records Management",
+const certifications = [
+  {
+    title: "Advanced Accounting Software Accreditation",
+    provider: "G-Tec Certified — Tally Prime, QuickBooks Online, Sage 50",
+    type: "Professional Credential"
+  },
+  {
+    title: "Executive Office Workflow & Document Controls",
+    provider: "Office Productivity Suite — Word, Advanced Excel (Pivot & Macros)",
+    type: "Operational Competency"
+  },
+  {
+    title: "GST, VAT & Statutory Compliance Practices",
+    provider: "Taxation & Financial Reporting Compliance Seminars",
+    type: "Workshops"
+  },
+  {
+    title: "Digital Archiving & Modern Information Security",
+    provider: "Corporate Database Security Protocols & GDPR Best Practices",
+    type: "Training Seminar"
+  }
 ];
 
 export function Education() {
   return (
-    <section id="education" className="py-24 bg-background">
+    <section id="education" className="py-24 bg-background relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionHeader eyebrow="Education & Training" title="Academic foundation and continuous learning." />
-        <div className="grid lg:grid-cols-[1.3fr_1fr] gap-8">
-          <div className="space-y-4">
-            {education.map((e) => (
-              <div key={e.degree} className="flex gap-4 p-6 rounded-2xl bg-card border border-border shadow-card-soft hover:shadow-elegant transition-smooth">
-                <div className="h-11 w-11 rounded-xl bg-gradient-hero text-primary-foreground grid place-items-center shrink-0">
-                  <GraduationCap className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="flex flex-wrap items-baseline justify-between gap-2">
-                    <h3 className="font-display text-lg font-semibold">{e.degree}</h3>
-                    <span className="text-xs font-semibold text-accent">{e.year}</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{e.school}</p>
-                  <p className="text-sm text-muted-foreground mt-2">{e.note}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="p-6 rounded-2xl bg-gradient-hero text-primary-foreground shadow-elegant">
-            <div className="flex items-center gap-2 mb-5">
-              <Award className="h-5 w-5" />
-              <h3 className="font-display text-xl font-semibold">Certifications & Training</h3>
+        <SectionHeader eyebrow="Education & Training" title="Academic foundation and verified professional expertise." />
+        
+        <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 mt-12">
+          {/* Left Column: Academic Display */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-2 pb-3 border-b border-border mb-4">
+              <span className="h-2 w-2 rounded-full bg-primary" />
+              <h3 className="font-display text-base font-bold text-primary">Academic & Accounting Diplomas</h3>
             </div>
-            <ul className="space-y-3">
-              {certs.map((c) => (
-                <li key={c} className="flex gap-3 text-sm border-b border-primary-foreground/10 pb-3 last:border-0">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent mt-2 shrink-0" />
-                  <span className="opacity-90">{c}</span>
-                </li>
+
+            <div className="space-y-5">
+              {education.map((e) => (
+                <div 
+                  key={e.degree} 
+                  className="group relative p-6 rounded-2xl bg-card border border-border shadow-card-soft hover:shadow-elegant hover:border-primary/30 transition-smooth"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 rounded-xl bg-primary-foreground/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground grid place-items-center shrink-0 transition-smooth">
+                      <GraduationCap className="h-5 w-5" />
+                    </div>
+                    
+                    <div className="flex-grow">
+                      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-1">
+                        <h4 className="font-display font-bold text-foreground text-base group-hover:text-primary transition-smooth">
+                          {e.degree}
+                        </h4>
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-accent-soft text-accent border border-accent/20 flex items-center gap-1">
+                          <Calendar className="h-3 w-3" />
+                          {e.year}
+                        </span>
+                      </div>
+                      
+                      <p className="text-xs text-muted-foreground flex items-center gap-1.5 mb-3 font-semibold">
+                        <Landmark className="h-3.5 w-3.5" />
+                        {e.school}
+                      </p>
+                      
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        {e.note}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
+          </div>
+
+          {/* Right Column: Certifications Grid */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-2 pb-3 border-b border-border mb-4">
+              <span className="h-2 w-2 rounded-full bg-accent" />
+              <h3 className="font-display text-base font-bold text-primary">Accreditations & Professional Training</h3>
+            </div>
+
+            <div className="space-y-4">
+              {certifications.map((c) => (
+                <div 
+                  key={c.title} 
+                  className="group p-5 rounded-2xl bg-card border border-border/80 shadow-card-soft hover:shadow-elegant hover:border-accent/40 transition-smooth"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="h-8 w-8 rounded-lg bg-accent-soft text-accent grid place-items-center shrink-0 mt-0.5 group-hover:bg-accent group-hover:text-accent-foreground transition-smooth">
+                      <Award className="h-4.5 w-4.5" />
+                    </div>
+                    
+                    <div>
+                      <span className="text-[9px] uppercase tracking-wider font-extrabold text-accent block mb-1">
+                        {c.type}
+                      </span>
+                      <h4 className="font-display font-bold text-sm text-foreground mb-1 group-hover:text-primary transition-smooth">
+                        {c.title}
+                      </h4>
+                      <p className="text-[10px] text-muted-foreground font-medium">
+                        {c.provider}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
