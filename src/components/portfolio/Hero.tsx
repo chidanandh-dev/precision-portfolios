@@ -12,54 +12,54 @@ export function Hero() {
         <div className="absolute bottom-10 right-10 h-[30rem] w-[30rem] rounded-full bg-accent-soft/30 blur-3xl animate-float" />
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.3fr_1fr] gap-16 lg:gap-20 items-center">
+      <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-20 items-center">
         {/* Left Column: Premium Typography & Content */}
-        <div className="animate-fade-up">
+        <div className="animate-fade-up text-center lg:text-left flex flex-col items-center lg:items-start">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-soft text-accent-foreground text-xs font-semibold uppercase tracking-wider mb-6 border border-accent/20">
             <Sparkles className="h-3.5 w-3.5 animate-pulse text-accent" />
             Executive Office & Financial Support
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.1] mb-4 text-foreground">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.1] mb-4 text-foreground">
             Harikrishna <span className="text-primary font-extrabold relative">K<span className="absolute bottom-1.5 left-0 w-full h-1 bg-accent/60 rounded-full" /></span>
           </h1>
 
-          <div className="text-lg md:text-xl font-sans font-semibold text-primary mb-5 flex flex-wrap items-center gap-2">
+          <div className="text-base sm:text-lg md:text-xl font-sans font-semibold text-primary mb-5 flex flex-wrap justify-center lg:justify-start items-center gap-2">
             <span>Administrative Assistant</span>
             <span className="text-accent/60 font-light">|</span>
             <span>Accounting Support Specialist</span>
           </div>
 
-          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed font-normal">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed font-normal">
             Delivering efficient administrative and financial support with accuracy, meticulous organization, and absolute professionalism.
           </p>
 
           {/* Premium Call-to-Action Buttons */}
-          <div className="flex flex-wrap gap-4 items-center mb-12">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant px-7 py-6 rounded-xl font-medium transition-smooth">
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-stretch sm:items-center justify-center lg:justify-start mb-12">
+            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/95 shadow-elegant px-7 py-6 rounded-xl font-medium transition-smooth w-full sm:w-auto text-center justify-center">
               <a href="/Harikrishna_K_CV.pdf" download>
                 <Download className="h-4 w-4 mr-2" />
                 Download CV
               </a>
             </Button>
             
-            <Button asChild size="lg" variant="outline" className="border-border hover:bg-card hover:text-primary px-7 py-6 rounded-xl font-medium shadow-card-soft transition-smooth">
+            <Button asChild size="lg" variant="outline" className="border-border hover:bg-card hover:text-primary px-7 py-6 rounded-xl font-medium shadow-card-soft transition-smooth w-full sm:w-auto text-center justify-center">
               <a href="#contact">
                 <Mail className="h-4 w-4 mr-2" />
                 Contact Me
               </a>
             </Button>
 
-            <Button asChild variant="link" className="text-primary hover:text-accent font-semibold flex items-center gap-1 group py-2">
-              <a href="#experience">
+            <Button asChild variant="link" className="text-primary hover:text-accent font-semibold flex items-center justify-center gap-1 group py-2 w-full sm:w-auto">
+              <a href="#experience" className="inline-flex items-center">
                 View Experience
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 ml-1" />
               </a>
             </Button>
           </div>
 
           {/* Clean Executive Statistics Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl border-t border-border/80 pt-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-2xl border-t border-border/80 pt-8 text-left">
             {[
               { 
                 n: "2+", 

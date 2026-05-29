@@ -145,40 +145,40 @@ function Hero() {
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-20 left-10 h-96 w-96 rounded-full bg-primary/10 blur-3xl" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute bottom-10 right-10 h-[30rem] w-[30rem] rounded-full bg-accent-soft/30 blur-3xl animate-float" })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.3fr_1fr] gap-16 lg:gap-20 items-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "animate-fade-up", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-20 items-center", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "animate-fade-up text-center lg:text-left flex flex-col items-center lg:items-start", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-soft text-accent-foreground text-xs font-semibold uppercase tracking-wider mb-6 border border-accent/20", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(Sparkles, { className: "h-3.5 w-3.5 animate-pulse text-accent" }),
           "Executive Office & Financial Support"
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.1] mb-4 text-foreground", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.1] mb-4 text-foreground", children: [
           "Harikrishna ",
           /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-primary font-extrabold relative", children: [
             "K",
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "absolute bottom-1.5 left-0 w-full h-1 bg-accent/60 rounded-full" })
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-lg md:text-xl font-sans font-semibold text-primary mb-5 flex flex-wrap items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-base sm:text-lg md:text-xl font-sans font-semibold text-primary mb-5 flex flex-wrap justify-center lg:justify-start items-center gap-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Administrative Assistant" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-accent/60 font-light", children: "|" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Accounting Support Specialist" })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base md:text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed font-normal", children: "Delivering efficient administrative and financial support with accuracy, meticulous organization, and absolute professionalism." }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap gap-4 items-center mb-12", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, size: "lg", className: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant px-7 py-6 rounded-xl font-medium transition-smooth", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: "/Harikrishna_K_CV.pdf", download: true, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm sm:text-base md:text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed font-normal", children: "Delivering efficient administrative and financial support with accuracy, meticulous organization, and absolute professionalism." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-stretch sm:items-center justify-center lg:justify-start mb-12", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, size: "lg", className: "bg-primary text-primary-foreground hover:bg-primary/95 shadow-elegant px-7 py-6 rounded-xl font-medium transition-smooth w-full sm:w-auto text-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: "/Harikrishna_K_CV.pdf", download: true, children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Download, { className: "h-4 w-4 mr-2" }),
             "Download CV"
           ] }) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, size: "lg", variant: "outline", className: "border-border hover:bg-card hover:text-primary px-7 py-6 rounded-xl font-medium shadow-card-soft transition-smooth", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: "#contact", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, size: "lg", variant: "outline", className: "border-border hover:bg-card hover:text-primary px-7 py-6 rounded-xl font-medium shadow-card-soft transition-smooth w-full sm:w-auto text-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: "#contact", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "h-4 w-4 mr-2" }),
             "Contact Me"
           ] }) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, variant: "link", className: "text-primary hover:text-accent font-semibold flex items-center gap-1 group py-2", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: "#experience", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, variant: "link", className: "text-primary hover:text-accent font-semibold flex items-center justify-center gap-1 group py-2 w-full sm:w-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: "#experience", className: "inline-flex items-center", children: [
             "View Experience",
-            /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "h-4 w-4 transition-transform group-hover:translate-x-1" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "h-4 w-4 transition-transform group-hover:translate-x-1 ml-1" })
           ] }) })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl border-t border-border/80 pt-8", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-2xl border-t border-border/80 pt-8 text-left", children: [
           {
             n: "2+",
             l: "Years Experience",
@@ -908,7 +908,7 @@ const Toaster = ({ ...props }) => {
   );
 };
 function Index() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-background", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-background overflow-x-hidden w-full", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Hero, {}),
