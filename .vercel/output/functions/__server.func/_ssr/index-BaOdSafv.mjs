@@ -89,7 +89,7 @@ function Navbar() {
     }
   );
 }
-const portrait = "/assets/harikrishna-portrait-DMSAjOZ1.jpg";
+const portrait = "/assets/harikrishna-portrait-CUuivsc1.jpg";
 function Hero() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { id: "home", className: "relative pt-32 pb-24 overflow-hidden bg-gradient-subtle", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute inset-0 -z-10 opacity-40", children: [
